@@ -10,6 +10,18 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  analytics-db:
+    image: postgres:16
+    container_name: analytics-db
+    environment:
+      POSTGRES_DB: ${ANALYTICS_DB}
+      POSTGRES_USER: ${ANALYTICS_USER}
+      POSTGRES_PASSWORD: ${ANALYTICS_PASSWORD}
+    volumes:
+      - analytics_data:/var/lib/postgresql/data
+      - ./init:/docker-entrypoint-initdb.d:ro
+      - ./data:/data:ro
+
   metabase:
     image: metabase/metabase:latest
     container_name: metabase-app
@@ -24,6 +36,8 @@ services:
       MB_DB_HOST: db
     depends_on:
       - db
+      - analytics-db
 
 volumes:
   postgres_data:
+  analytics_data:

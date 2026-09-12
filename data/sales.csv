@@ -1,0 +1,13 @@
+sale_id,order_date,department,region,product,category,quantity,revenue
+1,2026-01-05,Sales,Riyadh,Laptop,Electronics,2,8400
+2,2026-01-12,Operations,Jeddah,Monitor,Electronics,3,3600
+3,2026-02-03,Finance,Dammam,Office Chair,Furniture,4,2800
+4,2026-02-15,Sales,Riyadh,Keyboard,Electronics,5,1750
+5,2026-03-02,Product,Jeddah,Desk,Furniture,2,2400
+6,2026-03-18,Operations,Riyadh,Headset,Electronics,6,1800
+7,2026-04-07,Finance,Dammam,Laptop,Electronics,1,4200
+8,2026-04-19,Sales,Jeddah,Monitor,Electronics,4,4800
+9,2026-05-06,Product,Riyadh,Office Chair,Furniture,3,2100
+10,2026-05-21,Sales,Dammam,Laptop,Electronics,2,8400
+11,2026-06-11,Operations,Jeddah,Keyboard,Electronics,8,2800
+12,2026-06-25,Finance,Riyadh,Desk,Furniture,3,3600
